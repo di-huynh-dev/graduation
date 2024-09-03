@@ -1,27 +1,38 @@
 .simply-countdown {
-    overflow: hidden;
-    display: table;
-    margin: auto;
-  }
-  .simply-countdown > .simply-section {
-    width: 50px;
-    height: 50px;
-    padding: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    float: left;
-    margin: 10px;
-    background: var(--pink);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    border-radius: 50%;
-  }
-  .simply-countdown > .simply-section .simply-amount,
-  .simply-countdown > .simply-section .simply-word {
-    display: block;
-    text-align: center;
-  }
-  
-  .simply-countdown > .simply-section .simply-amount {
-    font-size: 1.6rem;
-  }
+	overflow: visible;
+	display: table;
+	font-family: var(--family-noto);
+}
+
+.simply-countdown > .simply-section {
+	width: 90px;
+	height: 90px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	float: left;
+	margin: 20px;
+	border: 2px solid var(--alice-blue);
+	border-radius: 20px;
+	transform: rotate(-45deg);
+}
+
+.simply-countdown > .simply-section > div {
+	transform: rotate(45deg);
+}
+
+.simply-countdown > .simply-section > div .simply-amount,
+.simply-countdown > .simply-section > div .simply-word {
+	display: block;
+	text-align: center;
+}
+
+.simply-countdown > .simply-section > div .simply-amount {
+	font-size: var(--fs-24);
+	font-weight: var(--fw-500);
+}
+
+.simply-countdown > .simply-section > div .simply-word {
+	font-size: var(--fs-16);
+	font-weight: var(--fw-500);
+}
