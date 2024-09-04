@@ -25,22 +25,7 @@
 	--fs-32: 32px;
 	--fs-40: 40px;
 	--ls-sm: 2px;
-}
-
-*,
-*::before,
-*::after {
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	border: none;
-	outline: none;
-	list-style: none;
-	text-decoration: none;
+	--lh-md: 25px;
 }
 
 body {
@@ -51,6 +36,7 @@ body {
 	display: none;
 }
 
+/* Splash Screen */
 .opening {
 	position: fixed;
 	width: 100vw;
@@ -123,6 +109,53 @@ body {
 .open-btn:hover {
 	background-color: var(--trans-alice-blue);
 	transition: ease-in-out 300ms;
+}
+
+.nav-link,
+.hero,
+.btn-nav {
+	color: var(--alice-blue) !important;
+}
+
+.img-logo {
+	fill: var(--alice-blue);
+}
+
+/* Hero Section */
+.hero {
+	min-height: 100vh;
+	background-image: url(../images/hero-img-1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.hero .content {
+	padding: 75px 0;
+}
+
+.hero .content div h1 {
+	font-family: var(--family-playfair);
+	font-size: var(--fs-40);
+	font-weight: var(--fw-500);
+	letter-spacing: var(--ls-sm);
+	margin-bottom: 20px;
+}
+
+.hero .content div p {
+	font-size: var(--fs-16);
+	font-weight: var(--fw-400);
+	line-height: var(--lh-md);
+	width: 64%;
+}
+
+.hero .content span {
+	width: 120px;
+	font-family: var(--family-playfair);
+	font-size: var(--fs-20);
+	font-weight: var(--fw-400);
+	transform: rotate(90deg);
 }
 
 /* Media Query */
