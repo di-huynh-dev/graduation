@@ -3,6 +3,7 @@ function openInvitation() {
 
 	btnOpen.addEventListener("click", () => {
 		btnOpen.style.opacity = 0;
+		document.body.style.overflow = "visible";
 		setTimeout(() => {
 			btnOpen.classList.add("hidden");
 		}, 610);
