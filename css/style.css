@@ -29,8 +29,11 @@
 }
 
 body {
+	background-color: var(--bg-white-grey);
+	background-image: url(../images/bg-img-pattern.png);
+	background-repeat: repeat;
 	font-family: var(--family-noto);
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 .hidden {
@@ -172,6 +175,42 @@ body {
 	font-size: var(--fs-20);
 	font-weight: var(--fw-400);
 	transform: rotate(90deg);
+}
+
+/* Couples Section */
+.couples {
+	margin: 100px 0 75px;
+}
+
+.couples > div > div {
+	display: flex;
+	gap: 40px;
+}
+
+.couples h2 {
+	color: var(--kashmir-blue);
+	font-family: var(--family-playfair);
+	font-size: var(--fs-20);
+	font-weight: var(--fw-500);
+	letter-spacing: var(--ls-sm);
+	text-transform: uppercase;
+}
+
+.couples p {
+	color: var(--danube);
+	font-size: var(--fs-16);
+	font-weight: var(--fw-400);
+	line-height: var(--lh-md);
+}
+
+.couples-img {
+	position: relative;
+}
+
+.ornament-img {
+	position: absolute;
+	top: 109%;
+	right: 37%;
 }
 
 /* Media Query */
@@ -357,5 +396,26 @@ body {
 
 	.hero .content span {
 		font-size: var(--fs-24);
+	}
+
+	/* Couples Section */
+	.couples {
+		margin: 75px 0;
+	}
+
+	.couples p {
+		font-size: var(--fs-14);
+	}
+
+	.couples-img {
+		width: 250px;
+		height: 250px;
+	}
+
+	.ornament-img {
+		width: 115px;
+		height: 101px;
+		top: 127%;
+		right: 13%;
 	}
 }
