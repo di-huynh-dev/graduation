@@ -140,6 +140,43 @@ body {
 	transition: ease-in-out 300ms;
 }
 
+/* General Style */
+.hero .content,
+.info,
+.story {
+	padding: 75px 0;
+}
+
+.hero .content div h1,
+.info h1,
+.story h1,
+.couples h1,
+.card-title,
+.story h2 {
+	color: var(--kashmir-blue);
+	font-family: var(--family-playfair);
+	font-weight: var(--fw-500);
+	letter-spacing: var(--ls-sm);
+	text-transform: uppercase;
+}
+
+.hero .content div p,
+.couples p,
+.list-group-item,
+.story p,
+.story span {
+	font-size: var(--fs-16);
+	font-weight: var(--fw-400);
+	line-height: var(--lh-md);
+}
+
+.couples p,
+.list-group-item,
+.story p,
+.story span {
+	color: var(--danube);
+}
+
 /* Hero Section */
 .hero {
 	min-height: 100vh;
@@ -150,22 +187,13 @@ body {
 	position: relative;
 }
 
-.hero .content {
-	padding: 75px 0;
-}
-
 .hero .content div h1 {
-	font-family: var(--family-playfair);
+	color: var(--alice-blue);
 	font-size: var(--fs-40);
-	font-weight: var(--fw-500);
-	letter-spacing: var(--ls-sm);
 	margin-bottom: 20px;
 }
 
 .hero .content div p {
-	font-size: var(--fs-16);
-	font-weight: var(--fw-400);
-	line-height: var(--lh-md);
 	width: 64%;
 }
 
@@ -180,7 +208,7 @@ body {
 
 /* Couples Section */
 .couples {
-	margin: 100px 0 75px;
+	padding: 100px 0 75px;
 }
 
 .couples > div > div {
@@ -188,20 +216,8 @@ body {
 	gap: 40px;
 }
 
-.couples h2 {
-	color: var(--kashmir-blue);
-	font-family: var(--family-playfair);
+.couples h1 {
 	font-size: var(--fs-20);
-	font-weight: var(--fw-500);
-	letter-spacing: var(--ls-sm);
-	text-transform: uppercase;
-}
-
-.couples p {
-	color: var(--danube);
-	font-size: var(--fs-16);
-	font-weight: var(--fw-400);
-	line-height: var(--lh-md);
 }
 
 .couples-img {
@@ -215,17 +231,8 @@ body {
 }
 
 /* Info Section */
-.info {
-	margin: 75px 0;
-}
-
 .info h1 {
-	color: var(--kashmir-blue);
-	font-family: var(--family-playfair);
 	font-size: var(--fs-24);
-	font-weight: var(--fw-500);
-	letter-spacing: var(--ls-sm);
-	text-transform: uppercase;
 }
 
 .card,
@@ -240,19 +247,7 @@ body {
 }
 
 .card-title {
-	color: var(--kashmir-blue);
-	font-family: var(--family-playfair);
 	font-size: var(--fs-20);
-	font-weight: var(--fw-500);
-	letter-spacing: var(--ls-sm);
-	text-transform: uppercase;
-}
-
-.list-group-item {
-	color: var(--danube);
-	font-size: var(--fs-16);
-	font-weight: var(--fw-400);
-	line-height: var(--lh-md);
 }
 
 .btn-card {
@@ -277,6 +272,67 @@ body {
 .btn-outline-card:hover {
 	border: 2px solid var(--big-stone);
 	transition: ease-in-out 300ms;
+}
+
+/* Story Section */
+.story h1 {
+	font-size: var(--fs-24);
+}
+
+.story h2 {
+	font-size: var(--fs-20);
+}
+
+.timeline {
+	list-style: none;
+	padding: 18px 0;
+	margin-top: 16px;
+	position: relative;
+}
+
+.timeline::before {
+	content: "";
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	border-left: 2px dashed var(--kashmir-blue);
+	padding: 5px 0;
+	left: 50%;
+}
+
+.timeline li {
+	margin-bottom: 24px;
+	position: relative;
+}
+
+.timeline li::before,
+.timeline li::after {
+	content: "";
+	display: table;
+}
+
+.timeline li::after {
+	clear: both;
+	padding-bottom: 100px;
+}
+
+.timeline li .timeline-img {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 50%;
+	box-shadow: 0 30px 50px 20px var(--trans-kashmir-blue);
+}
+
+.timeline li .timeline-panel {
+	width: 50%;
+	float: left;
+	padding: 32px 200px 32px 0;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+	float: right;
+	padding: 32px 0 32px 200px;
 }
 
 /* Media Query */
@@ -469,6 +525,20 @@ body {
 		border: 2px solid var(--big-stone);
 	}
 
+	/* General Style */
+	.info h1,
+	.story h1 {
+		font-size: var(--fs-20);
+	}
+
+	.hero .content div p,
+	.couples p,
+	.list-group-item,
+	.story p,
+	.story span {
+		font-size: var(--fs-14);
+	}
+
 	/* Hero Section */
 	.hero {
 		background-image: url(../images/hero-img-mini.png);
@@ -479,12 +549,12 @@ body {
 	}
 
 	.hero .content div h1 {
+		color: var(--alice-blue);
 		font-size: var(--fs-32);
 		margin-bottom: 10px;
 	}
 
 	.hero .content div p {
-		font-size: var(--fs-14);
 		width: 85%;
 	}
 
@@ -493,14 +563,6 @@ body {
 	}
 
 	/* Couples Section */
-	.couples {
-		margin: 75px 0;
-	}
-
-	.couples p {
-		font-size: var(--fs-14);
-	}
-
 	.couples-img {
 		width: 250px;
 		height: 250px;
@@ -509,17 +571,13 @@ body {
 	.ornament-img {
 		width: 115px;
 		height: 101px;
-		top: 127%;
+		top: 130%;
 		right: 13%;
 	}
 
 	/* Info Section */
-	.info h1 {
-		font-size: var(--fs-20);
-	}
-
-	.list-group-item {
-		font-size: var(--fs-14);
+	.card {
+		padding: 10px 10px;
 	}
 
 	.btn-card {
@@ -539,5 +597,44 @@ body {
 	.info-detail {
 		display: flex;
 		gap: 20px;
+	}
+
+	/* Story Section */
+	.timeline {
+		padding: 0;
+		margin-top: 0;
+	}
+
+	.timeline::before {
+		display: none;
+	}
+
+	.timeline li {
+		margin-bottom: 30px;
+	}
+
+	.timeline li::after {
+		padding-bottom: 10px;
+	}
+
+	.timeline li .timeline-img {
+		width: 250px;
+		height: 250px;
+		position: relative;
+		left: 0;
+		transform: translateX(0);
+		margin: 0 auto;
+	}
+
+	.timeline li .timeline-panel {
+		width: 100%;
+		padding: 0;
+		margin-top: 30px;
+		float: none;
+	}
+
+	.timeline li.timeline-inverted .timeline-panel {
+		padding: 0;
+		float: none;
 	}
 }
