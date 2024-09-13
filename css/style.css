@@ -125,7 +125,8 @@ body {
 }
 
 .img-logo {
-	filter: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(2314%) hue-rotate(107deg) brightness(100%) contrast(100%);
+	filter: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(2314%)
+		hue-rotate(107deg) brightness(100%) contrast(100%);
 }
 
 .btn-nav {
@@ -143,7 +144,8 @@ body {
 /* General Style */
 .hero .content,
 .info,
-.story {
+.story,
+.gallery {
 	padding: 75px 0;
 }
 
@@ -152,7 +154,8 @@ body {
 .story h1,
 .couples h1,
 .card-title,
-.story h2 {
+.story h2,
+.gallery h1 {
 	color: var(--kashmir-blue);
 	font-family: var(--family-playfair);
 	font-weight: var(--fw-500);
@@ -335,6 +338,15 @@ body {
 	padding: 32px 0 32px 200px;
 }
 
+/* Gallery Section */
+.gallery h1 {
+	font-size: var(--fs-24);
+}
+
+.gallery-img {
+	box-shadow: 0 30px 50px 20px var(--trans-kashmir-blue);
+}
+
 /* Media Query */
 /* Tablet */
 @media screen and (max-width: 800px) {
@@ -353,7 +365,8 @@ body {
 	}
 
 	.navbar-toggler-icon {
-		filter: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(2314%) hue-rotate(107deg) brightness(100%) contrast(100%) !important;
+		filter: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(2314%)
+			hue-rotate(107deg) brightness(100%) contrast(100%) !important;
 	}
 
 	.offcanvas {
@@ -369,7 +382,8 @@ body {
 	}
 
 	.img-logo-lg {
-		filter: brightness(0) saturate(100%) invert(15%) sepia(8%) saturate(3587%) hue-rotate(175deg) brightness(98%) contrast(95%);
+		filter: brightness(0) saturate(100%) invert(15%) sepia(8%) saturate(3587%)
+			hue-rotate(175deg) brightness(98%) contrast(95%);
 	}
 
 	.nav-link {
@@ -383,7 +397,8 @@ body {
 	}
 
 	.btn-close {
-		filter: brightness(0) saturate(100%) invert(15%) sepia(8%) saturate(3587%) hue-rotate(175deg) brightness(98%) contrast(95%) !important;
+		filter: brightness(0) saturate(100%) invert(15%) sepia(8%) saturate(3587%)
+			hue-rotate(175deg) brightness(98%) contrast(95%) !important;
 		opacity: 1 !important;
 		color: var(--big-stone) !important;
 		width: 5% !important;
@@ -479,7 +494,8 @@ body {
 	}
 
 	.navbar-toggler-icon {
-		filter: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(2314%) hue-rotate(107deg) brightness(100%) contrast(100%) !important;
+		filter: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(2314%)
+			hue-rotate(107deg) brightness(100%) contrast(100%) !important;
 	}
 
 	.offcanvas {
@@ -495,7 +511,8 @@ body {
 	}
 
 	.img-logo-lg {
-		filter: brightness(0) saturate(100%) invert(15%) sepia(8%) saturate(3587%) hue-rotate(175deg) brightness(98%) contrast(95%);
+		filter: brightness(0) saturate(100%) invert(15%) sepia(8%) saturate(3587%)
+			hue-rotate(175deg) brightness(98%) contrast(95%);
 	}
 
 	.nav-link {
@@ -509,7 +526,8 @@ body {
 	}
 
 	.btn-close {
-		filter: brightness(0) saturate(100%) invert(15%) sepia(8%) saturate(3587%) hue-rotate(175deg) brightness(98%) contrast(95%) !important;
+		filter: brightness(0) saturate(100%) invert(15%) sepia(8%) saturate(3587%)
+			hue-rotate(175deg) brightness(98%) contrast(95%) !important;
 		opacity: 1 !important;
 		color: var(--big-stone) !important;
 		width: 10% !important;
@@ -636,5 +654,14 @@ body {
 	.timeline li.timeline-inverted .timeline-panel {
 		padding: 0;
 		float: none;
+	}
+
+	/* Gallery Section */
+	.gallery h1 {
+		font-size: var(--fs-20);
+	}
+
+	.gallery-img {
+		width: 300px;
 	}
 }
