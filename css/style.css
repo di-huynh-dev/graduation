@@ -145,7 +145,8 @@ body {
 .hero .content,
 .info,
 .story,
-.gallery {
+.gallery,
+.wish {
 	padding: 75px 0;
 }
 
@@ -155,7 +156,9 @@ body {
 .couples h1,
 .card-title,
 .story h2,
-.gallery h1 {
+.gallery h1,
+.gift-title,
+.footer-title {
 	color: var(--kashmir-blue);
 	font-family: var(--family-playfair);
 	font-weight: var(--fw-500);
@@ -167,7 +170,14 @@ body {
 .couples p,
 .list-group-item,
 .story p,
-.story span {
+.story span,
+.wish p,
+.comment-name,
+.comment-confirm,
+.comment-message,
+.gift-subtitle,
+.gift-address,
+.footer-desc {
 	font-size: var(--fs-16);
 	font-weight: var(--fw-400);
 	line-height: var(--lh-md);
@@ -176,7 +186,12 @@ body {
 .couples p,
 .list-group-item,
 .story p,
-.story span {
+.story span,
+.wish p,
+.comment-name,
+.comment-confirm,
+.comment-message,
+.comment-divider {
 	color: var(--danube);
 }
 
@@ -345,6 +360,116 @@ body {
 
 .gallery-img {
 	box-shadow: 0 30px 50px 20px var(--trans-kashmir-blue);
+}
+
+/* wish Section */
+.card-body form input,
+.card-body form select,
+.card-body form textarea {
+	padding: 10px 20px;
+	background-color: var(--tropical-blue);
+	color: var(--kashmir-blue);
+}
+
+.card-body form input::placeholder,
+.card-body form textarea::placeholder {
+	color: var(--kashmir-blue);
+}
+
+.card-body form select {
+	color: var(--kashmir-blue);
+}
+
+.card-body form option {
+	background-color: var(--bg-white-grey);
+}
+
+.card-ucapan {
+	height: 78.5vh;
+}
+
+.comment-name {
+	font-weight: var(--fw-500);
+}
+
+.comment-confirm {
+	font-style: italic;
+}
+
+.comment-divider {
+	width: 10%;
+	border: 1px dashed;
+}
+
+/* Custom Scrollbar */
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background-color: var(--danube);
+	border-radius: 10px;
+}
+
+/* Gift Section */
+.gift-bg {
+	background-color: var(--alice-blue);
+	background-image: url(../images/bg-img-pattern.png);
+}
+
+.gift-title {
+	font-size: var(--fs-20);
+}
+
+.gift-subtitle,
+.gift-address {
+	color: var(--kashmir-blue);
+}
+
+.gift-icon {
+	color: var(--kashmir-blue);
+	font-size: 36px;
+}
+
+.gift .row .col:nth-child(1) {
+	padding-top: 2%;
+	width: 28%;
+}
+
+.gift .row .col:nth-child(2) {
+	padding-top: 2%;
+	width: 45%;
+}
+
+.btn-gift {
+	width: 100%;
+}
+
+/* Footer Section */
+.footer-bg {
+	background-color: var(--big-stone);
+}
+
+.footer-title {
+	color: var(--alice-blue) !important;
+	font-size: var(--fs-24);
+}
+
+.footer-desc {
+	color: var(--alice-blue);
+}
+
+.footer-icons {
+	list-style: none;
+	padding: 0;
+}
+
+.footer-icon a {
+	color: var(--alice-blue);
+	padding: 0 15px;
+	font-size: 24px;
+	cursor: pointer;
 }
 
 /* Media Query */
@@ -545,7 +670,9 @@ body {
 
 	/* General Style */
 	.info h1,
-	.story h1 {
+	.story h1,
+	.gallery h1,
+	.footer-title {
 		font-size: var(--fs-20);
 	}
 
@@ -553,7 +680,17 @@ body {
 	.couples p,
 	.list-group-item,
 	.story p,
-	.story span {
+	.story span,
+	.card-body p,
+	.card-body form select,
+	.card-body form input::placeholder,
+	.card-body form textarea::placeholder,
+	.comment-name,
+	.comment-confirm,
+	.comment-message,
+	.gift-subtitle,
+	.gift-address,
+	.footer-desc {
 		font-size: var(--fs-14);
 	}
 
@@ -656,12 +793,22 @@ body {
 		float: none;
 	}
 
-	/* Gallery Section */
-	.gallery h1 {
-		font-size: var(--fs-20);
+	/* wish Section */
+	.card-rsvp {
+		width: 100%;
 	}
 
-	.gallery-img {
-		width: 300px;
+	.comment-divider {
+		width: 20%;
+	}
+
+	/* Gift Section */
+	.gift .row .col:nth-child(-n + 2) {
+		padding-top: 0;
+		width: 100%;
+	}
+
+	.btn-gift {
+		width: 70%;
 	}
 }
