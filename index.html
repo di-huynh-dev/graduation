@@ -12,6 +12,10 @@
 			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
 			crossorigin="anonymous"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+		/>
 
 		<!-- simplyCountdown -->
 		<link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
@@ -423,6 +427,175 @@
 						</a>
 					</div>
 				</div>
+			</div>
+		</section>
+
+		<!-- Wish Section -->
+		<section class="wish" id="wish">
+			<div class="container">
+				<div class="row row-cols-lg-2 row-cols-1">
+					<div class="col col-lg-5 mb-3 mb-lg-0">
+						<div class="card border-0 rounded-0 card-rsvp">
+							<div class="card-body">
+								<h5 class="card-title">Resepsi</h5>
+							</div>
+							<div class="card-body">
+								<form class="row gy-3">
+									<div class="col-12">
+										<input
+											type="email"
+											class="form-control border-0 rounded-0"
+											id="fullname"
+											placeholder="Nama Lengkap"
+										/>
+									</div>
+									<div class="col-12">
+										<select
+											id="kehadiran"
+											class="form-select border-0 rounded-0"
+										>
+											<option selected>Hadir</option>
+											<option>Tidak Hadir</option>
+										</select>
+									</div>
+									<div class="col-12">
+										<textarea
+											class="form-control border-0 rounded-0"
+											id="wishes"
+											rows="3"
+											placeholder="Beri ucapan"
+										></textarea>
+									</div>
+									<div class="col-12">
+										<button type="submit" class="btn btn-card w-100 rounded-0">
+											Kirim
+										</button>
+									</div>
+								</form>
+							</div>
+							<div class="card-body">
+								<p>Silahkan mengisi kehadiran dan ucapan pada form diatas.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col col-lg-7">
+						<div class="card border-0 rounded-0 w-100 card-ucapan">
+							<div class="card-body">
+								<h5 class="card-title">Ucapan & Doa</h5>
+							</div>
+							<div class="card-body overflow-auto">
+								<div class="card-comment mb-5">
+									<h6 class="comment-name mb-1">Ahmad Patrick Gonzales</h6>
+									<span class="comment-confirm">Hadir</span>
+									<hr class="comment-divider mt-2" />
+									<p class="comment-message">
+										With supporting text below as a natural lead-in to
+										additional content.
+									</p>
+								</div>
+								<div class="card-comment mb-5">
+									<h6 class="comment-name mb-1">Ahmad Patrick Gonzales</h6>
+									<span class="comment-confirm">Hadir</span>
+									<hr class="comment-divider mt-2" />
+									<p class="comment-message">
+										With supporting text below as a natural lead-in to
+										additional content.
+									</p>
+								</div>
+								<div class="card-comment mb-5">
+									<h6 class="comment-name mb-1">Ahmad Patrick Gonzales</h6>
+									<span class="comment-confirm">Hadir</span>
+									<hr class="comment-divider mt-2" />
+									<p class="comment-message">
+										With supporting text below as a natural lead-in to
+										additional content.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Gift Section -->
+		<section class="gift" id="gift">
+			<div class="container-fluid gift-bg">
+				<div class="container py-5">
+					<div
+						class="row row-cols-lg-3 row-cols-1 align-items-center text-center"
+					>
+						<div class="col d-lg-flex mb-4 text-lg-start">
+							<div>
+								<i class="bi bi-gift gift-icon"></i>
+							</div>
+							<div class="ms-2">
+								<span class="gift-subtitle">Kirim Kado Anda</span>
+								<h6 class="gift-title">Kado Pernikahan</h6>
+							</div>
+						</div>
+						<div class="col d-lg-flex me-3 mb-4 text-lg-start">
+							<div>
+								<i class="bi bi-geo-alt gift-icon"></i>
+							</div>
+							<h6 class="gift-address ms-2">
+								Jl. Subur Gang Mirah Kecubung II No 2, Pemecutan Klod, Kec.
+								Denpasar Bar., Kota Denpasar, Bali 80119
+							</h6>
+						</div>
+						<div class="col-lg-3">
+							<button
+								type="button"
+								class="btn btn-card btn-gift rounded-0 text-center"
+							>
+								Konfirmasi <i class="bi bi-whatsapp ms-2"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<iframe
+				class="w-100"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d986.0587285537092!2d115.20221812435045!3d-8.669195721468899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd241517dceb289%3A0xc0a13289f80dd4bb!2sDevTier%20Software!5e0!3m2!1sid!2sid!4v1726547096220!5m2!1sid!2sid"
+				height="400"
+				style="border: 0"
+				allowfullscreen=""
+				loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"
+			></iframe>
+		</section>
+
+		<!-- Footer Section -->
+		<section class="footer" id="footer">
+			<div class="container-fluid text-center footer-bg py-5">
+				<h1 class="footer-title mb-4">Terima Kasih</h1>
+				<p class="footer-desc mb-4">
+					Dibuat dengan Cinta oleh DevTier Software
+				</p>
+				<ul
+					class="footer-icons d-flex justify-content-center align-items-center"
+				>
+					<li class="footer-icon">
+						<a href="#" target="_blank" rel="noopener noreferrer"
+							><i class="bi bi-instagram"></i
+						></a>
+					</li>
+					<li class="footer-icon">
+						<a href="#" target="_blank" rel="noopener noreferrer"
+							><i class="bi bi-whatsapp"></i
+						></a>
+					</li>
+					<li class="footer-icon">
+						<a href="#" target="_blank" rel="noopener noreferrer"
+							><i class="bi bi-browser-chrome"></i
+						></a>
+					</li>
+					<li class="footer-icon">
+						<a href="#" target="_blank" rel="noopener noreferrer"
+							><i class="bi bi-linkedin"></i
+						></a>
+					</li>
+				</ul>
 			</div>
 		</section>
 
