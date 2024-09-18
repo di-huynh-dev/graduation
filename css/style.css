@@ -34,7 +34,7 @@ body {
 	background-image: url(../images/bg-img-pattern.png);
 	background-repeat: repeat;
 	font-family: var(--family-noto);
-	/* overflow: hidden; */
+	overflow: hidden;
 }
 
 .hidden {
@@ -100,19 +100,16 @@ body {
 }
 
 .open-btn {
-	background-color: var(--trans-big-stone);
 	padding: 15px 40px;
 	cursor: pointer;
 	color: var(--alice-blue);
 	font-size: var(--fs-16);
 	font-weight: var(--fw-500);
-}
-
-.open-btn-outline {
 	border: 2px solid var(--alice-blue);
 }
 
 .open-btn:hover {
+	border: 2px solid var(--alice-blue);
 	background-color: var(--trans-alice-blue);
 	transition: ease-in-out 300ms;
 }
@@ -470,6 +467,35 @@ body {
 	padding: 0 15px;
 	font-size: 24px;
 	cursor: pointer;
+}
+
+/* Audio */
+.audio-icon-wrapper {
+	width: 64px;
+	height: 64px;
+	font-size: 64px;
+	position: fixed;
+	bottom: 40px;
+	right: 32px;
+	cursor: pointer;
+	color: var(--alice-blue);
+	opacity: 0.5;
+	mix-blend-mode: difference;
+	animation: rotating 4s linear infinite;
+	transform-origin: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 0;
+}
+
+@keyframes rotating {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 /* Media Query */
