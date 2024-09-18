@@ -32,7 +32,7 @@
 	</head>
 	<body>
 		<!-- Splash Screen -->
-		<div class="opening hidden">
+		<div class="opening">
 			<div class="opening-wrapper">
 				<div class="open-title">Kepada Bapak/Ibu/Saudara</div>
 				<div class="simply-countdown"></div>
@@ -43,7 +43,7 @@
 						<div class="open-date">07 . 12 . 2024</div>
 					</div>
 					<button
-						class="open-btn open-btn-outline"
+						class="btn open-btn rounded-0"
 						type="button"
 						onclick="openInvitation()"
 					>
@@ -599,6 +599,20 @@
 			</div>
 		</section>
 
+		<!-- Audio -->
+		<div id="audio-container">
+			<audio id="song" autoplay loop>
+				<source
+					src="./audio/westlife-beautiful-in-white.mp3"
+					type="audio/mp3"
+				/>
+			</audio>
+
+			<div class="audio-icon-wrapper" style="display: none">
+				<i class="bi bi-disc"></i>
+			</div>
+		</div>
+
 		<!-- Bootstrap JS -->
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -616,6 +630,6 @@
 		</script>
 
 		<script src="js/countdown-controller.js"></script>
-		<!-- <script src="js/openInvitation.js"></script> -->
+		<script src="js/openInvitation.js"></script>
 	</body>
 </html>
