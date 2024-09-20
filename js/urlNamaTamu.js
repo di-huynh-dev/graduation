@@ -5,4 +5,4 @@ const namaContainer = document.querySelector(".open-title span");
 
 namaContainer.innerText = `${pronoun} ${nama}`.replace(/ ,$/, ",");
 
-document.getElementById("fullname").value = nama;
+document.getElementById("nama_lengkap").value = nama;
