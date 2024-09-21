@@ -304,7 +304,7 @@
                     <textarea class="form-control border-0 rounded-0" id="ucapan" name="ucapan" rows="3" placeholder="Beri ucapan"></textarea>
                   </div>
                   <div class="col-12">
-                    <button type="submit" id="submit" class="btn btn-card w-100 rounded-0" onclick="save()">Kirim</button>
+                    <button type="submit" id="submit" class="btn btn-card w-100 rounded-0" onclick="save(event)">Kirim</button>
                   </div>
                 </form>
               </div>
@@ -395,6 +395,9 @@
       </div>
     </div>
 
+    <!-- sweetalert 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
@@ -429,26 +432,6 @@
       $(document).ready(function() {
         read();
       });
-
-      function validateForm() {
-        const nameInput = document.getElementById("nama_lengkap");
-        const messageInput = document.getElementById("ucapan");
-        
-        const namePattern = /^[A-Za-z\s]+$/; // Only letters and spaces
-        const messagePattern = /^[A-Za-z0-9\s,.!?'""]+$/; // Allow letters, numbers, and basic punctuation
-      
-        if (!namePattern.test(nameInput.value)) {
-          alert("Nama Lengkap hanya boleh mengandung huruf dan spasi.");
-          return false;
-        }
-      
-        if (!messagePattern.test(messageInput.value)) {
-          alert("Ucapan hanya boleh mengandung huruf, angka, dan tanda baca dasar.");
-          return false;
-        }
-      
-        return true; // Form is valid
-      }
     </script>
   </body>
 </html>

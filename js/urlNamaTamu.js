@@ -3,10 +3,6 @@ const nama = urlParams.get("n") || "";
 const pronoun = urlParams.get("p") || "Bapak/Ibu/Saudara/i";
 const namaContainer = document.querySelector(".open-title span");
 
-// namaContainer.innerText = `${pronoun} ${nama}`.replace(/ ,$/, ",");
-// document.getElementById("nama_lengkap").value = nama;
-
-// Construct the display text
 const displayText = `${pronoun} ${nama}`.trim().replace(/\s+$/, ''); // Trim any trailing spaces
 namaContainer.innerText = displayText.endsWith(",") ? displayText : displayText + ","; // Ensure a comma if needed
 

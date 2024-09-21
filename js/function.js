@@ -41,15 +41,24 @@ function store() {
       nama_lengkap: $("#nama_lengkap").val(),
       status: $("#status").val(),
       ucapan: $("#ucapan").val(),
-      csrf_token: $("#csrf_token").val(), // Include CSRF token
     },
     success: function (response) {
       var data = JSON.parse(response);
       if (data.success) {
-        alert("Sukses");
+        Swal.fire({
+          title: "Berhasil memberikan ucapan!",
+          text: "Terima kasih atas kehadiran dan dukungan anda dalam acara kami. Kehadiran anda sangat berarti bagi kami.",
+          icon: "success"
+        });
+        $("#nama_lengkap").val("");
+        $("#ucapan").val("");
         read();
       } else {
-        alert("Gagal: " + (data.errors ? data.errors.join(", ") : "Unknown error."));
+        Swal.fire({
+          title: "Mohon maaf ada kesalahan!",
+          text: "Harup memasukan data dengan benar!",
+          icon: "error"
+        });
       }
     },
     error: function () {
@@ -58,7 +67,8 @@ function store() {
   });
 }
 
-function save() {
+function save(event) {
+  event.preventDefault();
   $("#myform").attr("type") == "create" ? store() : clearForm();
 }
 
