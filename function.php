@@ -60,6 +60,3 @@ function store()
     echo json_encode($response);
 }
 ?>
-
-
-
