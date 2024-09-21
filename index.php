@@ -199,8 +199,7 @@
                   </div>
                   <div class="timeline-body">
                     <p>
-                      Pertama kali kita kenal melalui game online yaitu 'Mobile Legend', kebetulan juga kita mempunyai hobi yang sama yaitu bermain game disaat waktu luang. Lalu selama 1 tahun berteman, kami menjalin hubungan yang lebih
-                      intens dan selama 1 tahun kami mempunyai hubungan akhirnya kami memutuskan untuk melanjutkan hubungan kami ke tahap yang lebih serius
+                      Kami awalnya bermain game online "Mobile Legend" untuk menghabiskan waktu luang. Selama tahun pertama, kami menjalin hubungan yang lebih intens dan memutuskan untuk melanjutkan hubungan kami ke tahap yang lebih serius
                     </p>
                   </div>
                 </div>
@@ -248,33 +247,33 @@
 
         <div class="row row-cols-lg-3 row-cols-2 gy-lg-4 g-3 justify-content-center">
           <div class="col" data-aos="fade-up">
-            <a href="./images/galeri/FGM_4419.JPG" data-fancybox="gallery">
-              <img src="./images/galeri/FGM_4419.JPG" class="gallery-img mx-auto d-block img-fluid w-100" alt="Memori Pertama" />
+            <a href="./images/galeri/FGM_4419-0.jpg" data-fancybox="gallery">
+              <img src="./images/galeri/FGM_4419-0.jpg" class="gallery-img mx-auto d-block img-fluid w-100" alt="Memori Pertama" />
             </a>
           </div>
           <div class="col" data-aos="fade-up">
-            <a href="./images/galeri/FGM_4452.JPG" data-fancybox="gallery">
-              <img src="./images/galeri/FGM_4452.JPG" class="gallery-img mx-auto d-block img-fluid w-100" alt="Memori Kedua" />
+            <a href="./images/galeri/FGM_4452-0.jpg" data-fancybox="gallery">
+              <img src="./images/galeri/FGM_4452-0.jpg" class="gallery-img mx-auto d-block img-fluid w-100" alt="Memori Kedua" />
             </a>
           </div>
           <div class="col" data-aos="fade-up">
-            <a href="./images/galeri/FGM_4492.JPG" data-fancybox="gallery">
-              <img src="./images/galeri/FGM_4492.JPG" class="gallery-img mx-auto d-block img-fluid w-100" alt="Memori Ketiga" />
+            <a href="./images/galeri/FGM_4492-0.jpg" data-fancybox="gallery">
+              <img src="./images/galeri/FGM_4492-0.jpg" class="gallery-img mx-auto d-block img-fluid w-100" alt="Memori Ketiga" />
             </a>
           </div>
           <div class="col" data-aos="fade-up">
-            <a href="./images/galeri/FGM_4522.JPG" data-fancybox="gallery">
-              <img src="./images/galeri/FGM_4522.JPG" class="gallery-img mx-auto d-block img-fluid w-100" alt="Memori Keempat" />
+            <a href="./images/galeri/FGM_4522-0.jpg" data-fancybox="gallery">
+              <img src="./images/galeri/FGM_4522-0.jpg" class="gallery-img mx-auto d-block img-fluid w-100" alt="Memori Keempat" />
             </a>
           </div>
           <div class="col" data-aos="fade-up">
-            <a href="./images/galeri/FGM_4582.JPG" data-fancybox="gallery">
-              <img src="./images/galeri/FGM_4582.JPG" class="gallery-img mx-auto d-block img-fluid w-100" alt="Memori Kelima" />
+            <a href="./images/galeri/FGM_4582-0.jpg" data-fancybox="gallery">
+              <img src="./images/galeri/FGM_4582-0.jpg" class="gallery-img mx-auto d-block img-fluid w-100" alt="Memori Kelima" />
             </a>
           </div>
           <div class="col" data-aos="fade-up">
-            <a href="./images/galeri/FGM_4602.JPG" data-fancybox="gallery">
-              <img src="./images/galeri/FGM_4602.JPG" class="gallery-img mx-auto d-block img-fluid w-100" alt="Memori Keenam" />
+            <a href="./images/galeri/FGM_4602-0.jpg" data-fancybox="gallery">
+              <img src="./images/galeri/FGM_4602-0.jpg" class="gallery-img mx-auto d-block img-fluid w-100" alt="Memori Keenam" />
             </a>
           </div>
         </div>
