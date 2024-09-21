@@ -29,12 +29,15 @@
   --lh-md: 25px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--bg-white-grey);
   background-image: url(../images/bg-img-pattern.png);
   background-repeat: repeat;
   font-family: var(--family-noto);
-  overflow: hidden;
 }
 
 .hidden {
@@ -42,6 +45,10 @@ body {
 }
 
 /* Splash Screen */
+body.opening-active {
+  overflow: hidden;
+}
+
 .opening {
   position: fixed;
   width: 100vw;
