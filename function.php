@@ -19,9 +19,9 @@ function store()
     include "connection.php";
     $response = ['success' => false];
 
-    $nama = $_POST['nama_lengkap'];
-    $status = $_POST['status'];
-    $ucapan = $_POST['ucapan'];
+    $nama = mysqli_real_escape_string($koneksi, $_POST['nama_lengkap']);
+    $status = mysqli_real_escape_string($koneksi, $_POST['status']);
+    $ucapan = mysqli_real_escape_string($koneksi, $_POST['ucapan']);
 
     if($nama == "" || $status == "" | $ucapan == ""){
       echo json_encode($response);
