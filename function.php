@@ -43,12 +43,12 @@ function store()
     $response = ['success' => false];
 
     $nama = mysqli_real_escape_string($koneksi, $_POST['nama_lengkap']);
+    $nama = trim($nama);
     $status = mysqli_real_escape_string($koneksi, $_POST['status']);
+    $status = trim($status);
     $ucapan = mysqli_real_escape_string($koneksi, $_POST['ucapan']);
+    $ucapan = trim($ucapan);
 
-   //  if($nama == "" || $status == "" | $ucapan == ""){
-   //    echo json_encode($response);
-   //    exit;
    if (empty($nama) || empty($status) || empty($ucapan)) {
       echo json_encode(['success' => false, 'message' => 'All fields are required.']);
       exit;
