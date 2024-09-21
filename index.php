@@ -44,17 +44,15 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg z-3 position-absolute w-100">
       <div class="container">
-        <a class="navbar-brand">
+        <a class="navbar-brand" href="#">
           <img src="images/logo.svg" class="img-logo" alt="Erico & Riska" width="52" height="50" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <a class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </a>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <a class="offcanvas-title" id="offcanvasNavbarLabel">
-              <img src="images/logo.svg" class="img-logo-lg" alt="Erico & Riska" width="52" height="50" />
-            </a>
+            <img src="images/logo.svg" class="img-logo-lg offcanvas-title" id="offcanvasNavbarLabel" alt="Erico & Riska" width="52" height="50" />
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
@@ -425,11 +423,6 @@
     <script src="js/openInvitation.js"></script>
     <script src="js/urlNamaTamu.js"></script>
     <script src="js/function.js"></script>
-    <script>
-      const rootElement = document.querySelector(":root");
-
-      rootElement.style.smoothBehavior = "smooth";
-    </script>
     <script>
       $(document).ready(function() {
         read();
