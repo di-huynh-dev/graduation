@@ -1,4 +1,3 @@
 .git
-/database
-/audio
 connection.php
+/database
