@@ -59,40 +59,6 @@ function store()
     $response = ($hasil_query) ? ['success' => true] : ['success' => false];
     echo json_encode($response);
 }
-function validateForm() {
-   $errors = [];
-   $nama_lengkap = '';
-   $ucapan = '';
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Sanitize and validate Nama Lengkap
-    if (isset($_POST['nama_lengkap'])) {
-        $nama_lengkap = trim($_POST['nama_lengkap']);
-        if (!preg_match("/^[A-Za-z\s]+$/", $nama_lengkap)) {
-            $errors[] = "Nama Lengkap hanya boleh mengandung huruf dan spasi.";
-        }
-    } else {
-        $errors[] = "Nama Lengkap harus diisi.";
-    }
-
-    // Sanitize and validate Ucapan
-    if (isset($_POST['ucapan'])) {
-        $ucapan = trim($_POST['ucapan']);
-        if (!preg_match("/^[A-Za-z0-9\s,.!?\"'']+$/", $ucapan)) {
-            $errors[] = "Ucapan hanya boleh mengandung huruf, angka, dan tanda baca dasar.";
-        }
-    } else {
-        $errors[] = "Ucapan harus diisi.";
-    }
-
-    // If no errors, process the form (e.g., save to database)
-    if (empty($errors)) {
-        // Here you can handle successful form submission
-        // e.g., save data to a database
-        // Redirect or show a success message
-    }
-}
-}
 ?>
 
 
