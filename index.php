@@ -292,7 +292,7 @@
               <div class="card-body">
                 <form class="row gy-3" id="myform" method="POST" type="create">
                   <div class="col-12">
-                    <input type="text" class="form-control border-0 rounded-0" id="nama_lengkap" name="nama_lengkap" placeholder="Nama Lengkap" />
+                    <input type="text" class="form-control border-0 rounded-0" id="nama_lengkap" name="nama_lengkap" placeholder="Nama Lengkap" required/>
                   </div>
                   <div class="col-12">
                     <select id="status" name="status" class="form-select border-0 rounded-0">
@@ -429,6 +429,26 @@
       $(document).ready(function() {
         read();
       });
+
+      function validateForm() {
+        const nameInput = document.getElementById("nama_lengkap");
+        const messageInput = document.getElementById("ucapan");
+        
+        const namePattern = /^[A-Za-z\s]+$/; // Only letters and spaces
+        const messagePattern = /^[A-Za-z0-9\s,.!?'""]+$/; // Allow letters, numbers, and basic punctuation
+      
+        if (!namePattern.test(nameInput.value)) {
+          alert("Nama Lengkap hanya boleh mengandung huruf dan spasi.");
+          return false;
+        }
+      
+        if (!messagePattern.test(messageInput.value)) {
+          alert("Ucapan hanya boleh mengandung huruf, angka, dan tanda baca dasar.");
+          return false;
+        }
+      
+        return true; // Form is valid
+      }
     </script>
   </body>
 </html>

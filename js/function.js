@@ -22,10 +22,13 @@ function read() {
             "<p class='comment-message'>" +
             d.ucapan +
             "</p>" +
-            "</div >",
+            "</div>"
         );
       });
     },
+    error: function () {
+      alert("Error fetching comments. Please try again.");
+    }
   });
 }
 
@@ -38,6 +41,7 @@ function store() {
       nama_lengkap: $("#nama_lengkap").val(),
       status: $("#status").val(),
       ucapan: $("#ucapan").val(),
+      csrf_token: $("#csrf_token").val(), // Include CSRF token
     },
     success: function (response) {
       var data = JSON.parse(response);
@@ -45,9 +49,12 @@ function store() {
         alert("Sukses");
         read();
       } else {
-        alert("Gagal");
+        alert("Gagal: " + (data.errors ? data.errors.join(", ") : "Unknown error."));
       }
     },
+    error: function () {
+      alert("Error storing comment. Please try again.");
+    }
   });
 }
 
