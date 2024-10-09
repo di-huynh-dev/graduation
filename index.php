@@ -146,7 +146,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-5 d-flex justify-content-center">
+          <!-- Ngunduh Mantu -->
+          <!-- <div class="col-lg-5 d-flex justify-content-center">
             <div class="card border-0 rounded-0 h-100" data-aos="fade-up">
               <div class="card-body">
                 <h5 class="card-title">Ngunduh Mantu</h5>
@@ -172,7 +173,7 @@
                 <a href="https://maps.app.goo.gl/3xnccwmh6nVGBVJA9" target="_blank" class="btn btn-outline-card w-100 rounded-0" type="button">Lihat Lokasi</a>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
