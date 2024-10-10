@@ -141,8 +141,8 @@
                 ></iframe>
               </div>
               <div class="card-body d-flex flex-column gap-2">
-                <a href="https://calendar.app.google/YCgmFkRtwxXBzL3r6" class="btn btn-card w-100 rounded-0" type="button">Catat Tanggalnya</a>
-                <a href="https://maps.app.goo.gl/2BEBSaTw3FpnWBBr8" target="_blank" class="btn btn-outline-card w-100 rounded-0" type="button">Lihat Lokasi</a>
+                <a target="_blank" href="https://shorturl.at/xROrw" class="btn btn-card w-100 rounded-0" type="button">Catat Tanggalnya</a>
+                <a target="_blank" href="https://maps.app.goo.gl/2BEBSaTw3FpnWBBr8" class="btn btn-outline-card w-100 rounded-0" type="button">Lihat Lokasi</a>
               </div>
             </div>
           </div>
@@ -169,8 +169,8 @@
                 ></iframe>
               </div>
               <div class="card-body d-flex flex-column gap-2">
-                <a href="https://calendar.app.google/YCgmFkRtwxXBzL3r6" class="btn btn-card w-100 rounded-0" type="button">Catat Tanggalnya</a>
-                <a href="https://maps.app.goo.gl/3xnccwmh6nVGBVJA9" target="_blank" class="btn btn-outline-card w-100 rounded-0" type="button">Lihat Lokasi</a>
+                <a target="_blank" href="https://shorturl.at/czLDJ" class="btn btn-card w-100 rounded-0" type="button">Catat Tanggalnya</a>
+                <a target="_blank" href="https://maps.app.goo.gl/3xnccwmh6nVGBVJA9" class="btn btn-outline-card w-100 rounded-0" type="button">Lihat Lokasi</a>
               </div>
             </div>
           </div> -->
@@ -347,7 +347,7 @@
               <h6 class="gift-address ms-2">Jl. Subur Gang Mirah Kecubung II No 2, Pemecutan Klod, Kec. Denpasar Bar., Kota Denpasar, Bali 80119</h6>
             </div>
             <div class="col-lg-3">
-              <a href="https://api.whatsapp.com/send/?phone=62895394562656&text&type=phone_number&app_absent=0" target="_blank" class="btn btn-card btn-gift rounded-0 text-center">Konfirmasi <i class="bi bi-whatsapp ms-2"></i></a>
+              <a target="_blank" href="https://api.whatsapp.com/send/?phone=62895394562656&text&type=phone_number&app_absent=0" class="btn btn-card btn-gift rounded-0 text-center">Konfirmasi <i class="bi bi-whatsapp ms-2"></i></a>
             </div>
           </div>
         </div>
@@ -370,16 +370,16 @@
         <p class="footer-desc mb-4">Dibuat dengan Cinta oleh DevTier Software</p>
         <ul class="footer-icons d-flex justify-content-center align-items-center">
           <li class="footer-icon">
-            <a href="https://www.instagram.com/devtiersoftware?igsh=a3JlbzM5YXhmdHNw" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+            <a target="_blank" href="https://www.instagram.com/devtiersoftware?igsh=a3JlbzM5YXhmdHNw" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
           </li>
           <li class="footer-icon">
-            <a href="https://api.whatsapp.com/send/?phone=6285163653403&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
+            <a target="_blank" href="https://api.whatsapp.com/send/?phone=6285163653403&text&type=phone_number&app_absent=0" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
           </li>
           <li class="footer-icon">
-            <a href="https://devtiersoftware.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-browser-chrome"></i></a>
+            <a target="_blank" href="https://devtiersoftware.com/" rel="noopener noreferrer"><i class="bi bi-browser-chrome"></i></a>
           </li>
           <li class="footer-icon">
-            <a href="https://www.linkedin.com/company/devtier-software" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/company/devtier-software" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
           </li>
         </ul>
       </div>
