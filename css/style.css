@@ -149,7 +149,8 @@ body.opening-active {
 .info,
 .story,
 .gallery,
-.wish {
+.wish,
+.gift {
   padding: 75px 0;
 }
 
@@ -160,7 +161,7 @@ body.opening-active {
 .card-title,
 .story h2,
 .gallery h1,
-.gift-title,
+.gift h1,
 .footer-title {
   color: var(--kashmir-blue);
   font-family: var(--family-playfair);
@@ -178,8 +179,7 @@ body.opening-active {
 .comment-name,
 .comment-confirm,
 .comment-message,
-.gift-subtitle,
-.gift-address,
+.gift-note,
 .footer-desc {
   font-size: var(--fs-16);
   font-weight: var(--fw-400);
@@ -194,7 +194,8 @@ body.opening-active {
 .comment-name,
 .comment-confirm,
 .comment-message,
-.comment-divider {
+.comment-divider,
+.gift-note {
   color: var(--danube);
 }
 
@@ -416,37 +417,16 @@ body.opening-active {
 }
 
 /* Gift Section */
-.gift-bg {
-  background-color: var(--alice-blue);
-  background-image: url(../images/bg-img-pattern.png);
+.gift h1 {
+  font-size: var(--fs-24);
 }
 
-.gift-title {
-  font-size: var(--fs-20);
+.gift-note {
+  font-style: italic;
 }
 
-.gift-subtitle,
-.gift-address {
-  color: var(--kashmir-blue);
-}
-
-.gift-icon {
-  color: var(--kashmir-blue);
-  font-size: 36px;
-}
-
-.gift .row .col:nth-child(1) {
-  padding-top: 2%;
-  width: 28%;
-}
-
-.gift .row .col:nth-child(2) {
-  padding-top: 2%;
-  width: 45%;
-}
-
-.btn-gift {
-  width: 100%;
+.list-group-item img {
+  filter: brightness(0) saturate(100%) invert(65%) sepia(7%) saturate(2178%) hue-rotate(169deg) brightness(93%) contrast(95%);
 }
 
 /* Footer Section */
@@ -600,7 +580,8 @@ body.opening-active {
     font-weight: var(--fw-500);
   }
 
-  .info-detail {
+  .info-detail,
+  .gift-detail {
     display: flex;
     gap: 20px;
   }
@@ -699,6 +680,7 @@ body.opening-active {
   .info h1,
   .story h1,
   .gallery h1,
+  .gift h1,
   .footer-title {
     font-size: var(--fs-20);
   }
@@ -715,8 +697,7 @@ body.opening-active {
   .comment-name,
   .comment-confirm,
   .comment-message,
-  .gift-subtitle,
-  .gift-address,
+  .gift-note,
   .footer-desc {
     font-size: var(--fs-14);
   }
@@ -776,7 +757,8 @@ body.opening-active {
     font-weight: var(--fw-500);
   }
 
-  .info-detail {
+  .info-detail,
+  .gift-detail {
     display: flex;
     gap: 20px;
   }
@@ -827,15 +809,5 @@ body.opening-active {
 
   .comment-divider {
     width: 20%;
-  }
-
-  /* Gift Section */
-  .gift .row .col:nth-child(-n + 2) {
-    padding-top: 0;
-    width: 100%;
-  }
-
-  .btn-gift {
-    width: 70%;
   }
 }
