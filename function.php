@@ -42,12 +42,18 @@ function store()
     include "connection.php";
     $response = ['success' => false];
 
+   //  prevent SQLi
     $nama = mysqli_real_escape_string($koneksi, $_POST['nama_lengkap']);
     $nama = trim($nama);
     $status = mysqli_real_escape_string($koneksi, $_POST['status']);
     $status = trim($status);
     $ucapan = mysqli_real_escape_string($koneksi, $_POST['ucapan']);
     $ucapan = trim($ucapan);
+
+   //  prevent XSS
+   $nama = htmlspecialchars($nama, ENT_QUOTES, 'UTF-8');
+   $status = htmlspecialchars($status, ENT_QUOTES, 'UTF-8');
+   $ucapan = htmlspecialchars($ucapan, ENT_QUOTES, 'UTF-8');
 
    if (empty($nama) || empty($status) || empty($ucapan)) {
       echo json_encode(['success' => false, 'message' => 'All fields are required.']);
