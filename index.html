@@ -116,18 +116,20 @@
               <h5 class="card-title">Lời chúc dành cho Dĩ</h5>
             </div>
             <div class="card-body">
-              <form class="row gy-3" id="myform" method="POST" type="create">
+              <form
+                action="https://docs.google.com/forms/d/e/1FAIpQLSdHVaN4CIxqjFQtWYwwJ8xzKq8BGmtFbXRQFlFEFTgkP5gPIg/formResponse"
+                class="row gy-3" id="myform" method="POST" type="create">
                 <div class="col-12">
-                  <input type="text" class="form-control border-0 rounded-0" id="nama_lengkap" name="nama_lengkap"
+                  <input type="text" class="form-control border-0 rounded-0" id="nama_lengkap" name="entry.423596401"
                     placeholder="Họ tên, biệt danh..." required />
                 </div>
 
                 <div class="col-12">
-                  <textarea class="form-control border-0 rounded-0" id="ucapan" name="ucapan" rows="3" maxlength="250"
-                    placeholder="Lời chúc nè..."></textarea>
+                  <textarea class="form-control border-0 rounded-0" id="ucapan" name="entry.1544908510" rows="3"
+                    maxlength="250" placeholder="Lời chúc nè..."></textarea>
                 </div>
                 <div class="col-12">
-                  <button type="submit" id="submit" class="btn btn-card w-100 rounded-0" onclick="save(event)">Tặng
+                  <button type="submit" class="btn btn-card w-100 rounded-0" onclick="save(event)">Tặng
                     Dĩ 🎉</button>
                 </div>
                 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
@@ -145,19 +147,20 @@
     <script>
       function save(event) {
         event.preventDefault();
-        const name = document.getElementById('nama_lengkap').value;
-        const message = document.getElementById('ucapan').value;
-        if (name && message) {
-          confetti({
-            particleCount: 100,
-            spread: 70,
-            origin: { y: 0.6 }
-          });
 
-          // Reset form
-          document.getElementById('myform').reset();
-        }
+
+        confetti({
+          particleCount: 100,
+          spread: 70,
+          origin: { y: 0.6 }
+        });
+
+        document.getElementById('myform').submit();
+        // Reset form sau khi gửi
+        document.getElementById('myform').reset();
       }
+
+
     </script>
   </section>
 
